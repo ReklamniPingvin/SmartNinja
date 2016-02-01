@@ -1,0 +1,2 @@
+# SmartNinja
+tečaj iOSa
