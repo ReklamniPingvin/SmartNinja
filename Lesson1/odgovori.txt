@@ -1,0 +1,20 @@
+1. Za kaj se uporabljajo naslednji frameworki:
+	- CloudKit:
+		avtentikacija, privatne in javne baze podatkov
+	- CoreTelephony:
+		informacije o mobilnem operaterju, telefonski številki, trenutnem klicu, ali je klic vzpostavljen ali ne,…
+	- HomeKit:
+		to je framework za komunikacijo in kontrolo povezanih dodatkov v uporabnikovo hišo (pametna hiša)
+	- PassKit:
+		upravljanje z passi (letalske karte, karte, darilne kartice, kartice zvestobe,…
+
+
+2. Kakšna je razlika med Simulator-jem in Emulatorjem?
+	- Simulator je program, ki “se trudi” posnemati obnašanje realnega primera, implementacija pa je drugačna kot original, kar niti ni pomembno…
+	- Emulator je program, ki omogoča, da programska oprema teče tudi na drugih okoljih in operacijskih sistemih, ne samo na tistih, za katerega je bila ustvarjena. Skratka posnema realni primer.
+
+
+3. Zakaj se uporabljajo animacije?
+	Animácija (latinsko animare - obuditi v življenje) je iluzija gibanja, ki se doseže s hitrim prikazovanjem sličic. Vsaka sličica je nekoliko drugačna od predhodne. Običajno posnamejo 24 ali 12 sličic na sekundo, kar presega sposobnost človeškega vida razločiti posamezne sličice.
+
+
