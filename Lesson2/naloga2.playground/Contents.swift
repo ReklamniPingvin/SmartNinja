@@ -16,6 +16,8 @@ import UIKit
 
 class toDoTask {
     var task: String?
+    var priorityString: String?
+    var stateString: String?
     var createdDate: NSDate?
     var modifiedDate: NSDate?
     enum priority: String {
@@ -26,14 +28,29 @@ class toDoTask {
     }
     
     var description : String {
-        return "Neki bla bla bla bla"
+        return "Neki bla bla bla bla description"
     }
     
-    init(task: String, createdDate: NSDate, priority: toDoTask.priority, state: toDoTask.state) {
+    init(task: String, priority: toDoTask.priority) {
         self.task = task
-        self.createdDate = createdDate
+        self.priorityString = priority.rawValue
+        self.stateString = state.NotStarted.rawValue
     }
 }
+
+
+let task1 = toDoTask(task: "Poišči novega iPhona", priority: .Important)
+task1.task
+task1.priorityString
+task1.stateString
+
+let task2 = toDoTask(task: "Kupi mleko", priority: .Normal)
+task2.task
+task2.priorityString
+task2.stateString
+
+task2.stateString = toDoTask.state.Done.rawValue
+task2.stateString
 
 
 
