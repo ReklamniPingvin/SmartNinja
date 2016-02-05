@@ -9,7 +9,7 @@ class Money {
 }
 
 class MoneyConverter {
-    func convert(var value: Float, startCurrency: Money.currency, targetCurrency: Money.currency) -> (convertedValue: Float, targetCurrency: Money.currency.RawValue) {
+    func convert(var value: Float, startCurrency: Money.currency, targetCurrency: Money.currency) -> (convertedValue: Float, targetCurrency: Money.currency) {
         switch(startCurrency) {
             case .Euro:
                 switch(targetCurrency) {
@@ -30,7 +30,7 @@ class MoneyConverter {
                     case .Pound: break
             }
         }
-        return (value, targetCurrency.rawValue)
+        return (value, targetCurrency)
     }
 }
 
@@ -38,7 +38,7 @@ let euroToPound = MoneyConverter().convert(10, startCurrency: .Euro, targetCurre
 let dollarToEuro = MoneyConverter().convert(10, startCurrency: .Dollar, targetCurrency: .Euro)
 let poundToDollar = MoneyConverter().convert(10, startCurrency: .Pound, targetCurrency: .Dollar)
 
-print(dollarToEuro.convertedValue, dollarToEuro.targetCurrency)
+print(dollarToEuro.convertedValue, dollarToEuro.targetCurrency.rawValue)
 
 
 
