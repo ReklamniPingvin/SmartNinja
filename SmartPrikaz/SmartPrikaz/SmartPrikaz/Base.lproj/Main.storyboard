@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SmartPrikaz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vnesite v EUR" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WYW-aL-GBE">
+                                <rect key="frame" x="200" y="28" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="a6f-MG-JoH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IZBIRA NOVE VALUTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wg0-XY-MM3">
+                                <rect key="frame" x="216" y="82" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPf-29-Bqe">
+                                <rect key="frame" x="216" y="111" width="31" height="30"/>
+                                <state key="normal" title="USD"/>
+                                <connections>
+                                    <action selector="USDPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sQ7-Tj-HTX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwp-Sc-kza">
+                                <rect key="frame" x="355" y="111" width="30" height="30"/>
+                                <state key="normal" title="JPY"/>
+                                <connections>
+                                    <action selector="JPYPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7c-0c-Pz6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sx-bt-iq4">
+                                <rect key="frame" x="279" y="331" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IZRAČUNANA VREDNOST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUk-OS-SkO">
+                                <rect key="frame" x="200" y="289" width="201" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFy-MH-deH">
+                                <rect key="frame" x="253" y="200" width="95" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="OlX-zM-pms"/>
+                                </constraints>
+                                <color key="tintColor" red="0.98280853011639357" green="1" blue="0.99507310889877099" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="PRETVORI"/>
+                                <connections>
+                                    <action selector="converterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FVO-mk-ULq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HUk-OS-SkO" firstAttribute="top" secondItem="eFy-MH-deH" secondAttribute="bottom" constant="59" id="2Ad-Wm-OxE"/>
+                            <constraint firstItem="LPf-29-Bqe" firstAttribute="leading" secondItem="wg0-XY-MM3" secondAttribute="leading" id="B9P-MH-81C"/>
+                            <constraint firstItem="wg0-XY-MM3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Igm-FZ-28F"/>
+                            <constraint firstItem="HUk-OS-SkO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LqA-xC-oke"/>
+                            <constraint firstItem="0sx-bt-iq4" firstAttribute="top" secondItem="HUk-OS-SkO" secondAttribute="bottom" constant="21" id="P9O-W1-666"/>
+                            <constraint firstItem="0sx-bt-iq4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RCV-hd-3Jw"/>
+                            <constraint firstItem="eFy-MH-deH" firstAttribute="top" secondItem="wg0-XY-MM3" secondAttribute="bottom" constant="97" id="T9e-l9-V7I"/>
+                            <constraint firstItem="WYW-aL-GBE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YiU-8C-Qvh"/>
+                            <constraint firstItem="wg0-XY-MM3" firstAttribute="top" secondItem="WYW-aL-GBE" secondAttribute="bottom" constant="24" id="d6s-aj-x3n"/>
+                            <constraint firstItem="WYW-aL-GBE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="lwl-Ph-rOu"/>
+                            <constraint firstItem="eFy-MH-deH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qcU-KO-hmS"/>
+                            <constraint firstItem="pwp-Sc-kza" firstAttribute="top" secondItem="wg0-XY-MM3" secondAttribute="bottom" constant="8" id="rzf-JP-WA4"/>
+                            <constraint firstItem="pwp-Sc-kza" firstAttribute="trailing" secondItem="wg0-XY-MM3" secondAttribute="trailing" id="s5q-hg-pHi"/>
+                            <constraint firstItem="LPf-29-Bqe" firstAttribute="top" secondItem="wg0-XY-MM3" secondAttribute="bottom" constant="8" id="wDb-c9-i8Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="JPY" destination="pwp-Sc-kza" id="djH-hb-Qgx"/>
+                        <outlet property="USD" destination="LPf-29-Bqe" id="g72-9K-mCi"/>
+                        <outlet property="converter" destination="eFy-MH-deH" id="zuX-KV-Kon"/>
+                        <outlet property="result" destination="0sx-bt-iq4" id="lbG-JY-tcQ"/>
+                        <outlet property="textField" destination="WYW-aL-GBE" id="4Hw-S8-Dqt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-252" y="75"/>
+        </scene>
+    </scenes>
+</document>
