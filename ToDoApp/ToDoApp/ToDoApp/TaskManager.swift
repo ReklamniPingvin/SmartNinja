@@ -44,3 +44,19 @@ class TaskManager: NSObject {
     }
 
 }
+
+
+extension TaskManager {
+    
+    func tasksWithState(state: State) -> [Task] {
+        var sameStateTasks = [Task]()
+        for task in tasks {
+            if task.taskState == state {
+                sameStateTasks.append(task)
+            }
+        }
+        
+        return sameStateTasks
+    }
+    
+}

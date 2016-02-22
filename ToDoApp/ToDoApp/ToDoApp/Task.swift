@@ -47,9 +47,17 @@ class Task: NSObject {
         let taskDateModified = aDecoder.decodeObjectForKey("taskDateModified") as? NSDate
         let taskpriority = aDecoder.decodeObjectForKey("taskPriority") as! String
         let taskStateRaw = aDecoder.decodeObjectForKey("taskState")
+        
         let taskState = State(rawValue: taskStateRaw! as! String)
         
         self.init(taskName: taskName, taskpriority: taskpriority, taskState: taskState!, taskDateAdded:taskDateAdded)
         
+    }
+    
+    override func isEqual(object: AnyObject?) -> Bool {
+        if let rhs = object as? Task {
+            return self.taskName == rhs.taskName
+        }
+        return false
     }
 }

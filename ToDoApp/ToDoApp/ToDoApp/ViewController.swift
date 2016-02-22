@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var taskPriorityField: UITextField!
     @IBOutlet var addTaskButton: UIButton!
     @IBOutlet var taskShower: UILabel!
+    @IBOutlet var lastTask: UITextView!
     
     @IBAction func addTask(sender: UIButton) {
         if let taskName = taskField.text, taskPriority = taskPriorityField.text {
@@ -22,17 +23,20 @@ class ViewController: UIViewController {
                 
                 TaskManager.shared.addTask(newTask)
                 
-                taskShower.text = "\(TaskManager.shared.tasks.count)"
+                taskShower.text = "Število opravil: \(TaskManager.shared.tasks.count)"
+                lastTask.text = "Zadnje opravilo: \(TaskManager.shared.tasks.last?.descript())"
                 
                 taskPriorityField.text = ""
                 taskField.text = ""
+                
             }
         }
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
-        taskShower.text = "\(TaskManager.shared.tasks.count)"
+        taskShower.text = "Število opravil: \(TaskManager.shared.tasks.count)"
+        lastTask.text = "Zadnje opravilo: \(TaskManager.shared.tasks.last?.descript())"
     }
 }
 

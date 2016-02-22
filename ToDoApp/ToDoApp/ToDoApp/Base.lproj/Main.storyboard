@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -55,12 +56,24 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="thf-ru-sUJ">
+                                <rect key="frame" x="20" y="257" width="560" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="thf-ru-sUJ" secondAttribute="trailing" id="9q1-nr-9wi"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="thf-ru-sUJ" secondAttribute="leading" id="Hii-KQ-9W2"/>
+                            <constraint firstItem="thf-ru-sUJ" firstAttribute="centerX" secondItem="AET-m0-LLR" secondAttribute="centerX" id="L2m-ao-3IW"/>
                             <constraint firstItem="Ko5-af-1dy" firstAttribute="centerX" secondItem="AET-m0-LLR" secondAttribute="centerX" id="Mob-OV-KAL"/>
                             <constraint firstItem="ShX-2Q-t5R" firstAttribute="top" secondItem="Ko5-af-1dy" secondAttribute="bottom" constant="17" id="Y8U-Oc-2J0"/>
                             <constraint firstItem="Ko5-af-1dy" firstAttribute="top" secondItem="7HG-if-BoM" secondAttribute="bottom" constant="40" id="a0y-es-Qbt"/>
+                            <constraint firstItem="7Ou-Dy-0Qp" firstAttribute="top" secondItem="thf-ru-sUJ" secondAttribute="bottom" constant="215" id="cPB-WV-ce2"/>
+                            <constraint firstItem="thf-ru-sUJ" firstAttribute="top" secondItem="77o-TD-e8O" secondAttribute="bottom" constant="44" id="fHr-PD-RAM"/>
                             <constraint firstItem="ltv-T4-Cuy" firstAttribute="top" secondItem="ShX-2Q-t5R" secondAttribute="bottom" constant="17" id="iIP-PS-0FY"/>
                             <constraint firstItem="77o-TD-e8O" firstAttribute="top" secondItem="ltv-T4-Cuy" secondAttribute="bottom" constant="8" id="iOZ-14-UJP"/>
                             <constraint firstItem="ShX-2Q-t5R" firstAttribute="centerX" secondItem="AET-m0-LLR" secondAttribute="centerX" id="nvr-Up-JVh"/>
@@ -70,6 +83,7 @@
                     </view>
                     <connections>
                         <outlet property="addTaskButton" destination="ltv-T4-Cuy" id="KaK-BB-wVo"/>
+                        <outlet property="lastTask" destination="thf-ru-sUJ" id="rTw-wy-tpW"/>
                         <outlet property="taskField" destination="Ko5-af-1dy" id="SEj-nd-Tgc"/>
                         <outlet property="taskPriorityField" destination="ShX-2Q-t5R" id="3Rz-hr-Saa"/>
                         <outlet property="taskShower" destination="77o-TD-e8O" id="3iB-MG-jf5"/>
