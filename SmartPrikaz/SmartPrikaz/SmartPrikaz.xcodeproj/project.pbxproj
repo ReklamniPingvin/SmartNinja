@@ -14,6 +14,7 @@
 		E13111C91C6CEE87000851AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13111C71C6CEE87000851AA /* LaunchScreen.storyboard */; };
 		E16212391C74FA0400E1619D /* MoneyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16212381C74FA0400E1619D /* MoneyConverter.swift */; };
 		E162123B1C74FA3000E1619D /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162123A1C74FA3000E1619D /* Money.swift */; };
+		E1B24D161C7B401200F6661D /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B24D151C7B401200F6661D /* DoubleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E13111CA1C6CEE87000851AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E16212381C74FA0400E1619D /* MoneyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyConverter.swift; sourceTree = "<group>"; };
 		E162123A1C74FA3000E1619D /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		E1B24D151C7B401200F6661D /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				E13111BE1C6CEE87000851AA /* AppDelegate.swift */,
 				E13111C01C6CEE87000851AA /* ViewController.swift */,
 				E16212381C74FA0400E1619D /* MoneyConverter.swift */,
+				E1B24D151C7B401200F6661D /* DoubleExtension.swift */,
 				E162123A1C74FA3000E1619D /* Money.swift */,
 				E13111C21C6CEE87000851AA /* Main.storyboard */,
 				E13111C51C6CEE87000851AA /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B24D161C7B401200F6661D /* DoubleExtension.swift in Sources */,
 				E13111C11C6CEE87000851AA /* ViewController.swift in Sources */,
 				E16212391C74FA0400E1619D /* MoneyConverter.swift in Sources */,
 				E162123B1C74FA3000E1619D /* Money.swift in Sources */,

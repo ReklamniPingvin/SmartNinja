@@ -9,8 +9,10 @@
 import UIKit
 
 class MoneyConverter: NSObject {
+    
+    static let shared = MoneyConverter()
 
-        func convert(var value: Float, startCurrency: Money.currency, targetCurrency: Money.currency) -> (convertedValue: Float, targetCurrency: Money.currency.RawValue) {
+        func convert(var value: Double, startCurrency: Money.currency, targetCurrency: Money.currency) -> (convertedValue: Double, targetCurrency: Money.currency.RawValue) {
             switch(startCurrency) {
             case .Euro:
                 switch(targetCurrency) {
@@ -45,3 +47,4 @@ class MoneyConverter: NSObject {
         }
 
 }
+

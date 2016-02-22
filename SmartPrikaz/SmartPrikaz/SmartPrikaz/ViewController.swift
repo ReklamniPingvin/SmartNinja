@@ -47,8 +47,8 @@ class ViewController: UIViewController {
     
     @IBAction func converterPressed(sender: UIButton) {
         if self.textField.text != "" && self.textField.text != nil{
-            if let number = Float(self.textField.text!) {
-            let convertedResult = MoneyConverter().convert(number, startCurrency: .Euro, targetCurrency: newValute)
+            if let number = Double(self.textField.text!) {
+            let convertedResult = MoneyConverter.shared.convert(number, startCurrency: .Euro, targetCurrency: newValute)
 
             self.result.text = " \(String(convertedResult.convertedValue)) \(convertedResult.targetCurrency)"
             }

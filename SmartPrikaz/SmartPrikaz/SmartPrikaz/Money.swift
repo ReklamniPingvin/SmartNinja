@@ -6,9 +6,9 @@
 //  Copyright © 2016 Robert Grdadolnik. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class Money: NSObject {
+class Money: Equatable, Comparable {
     enum currency: String {
         case Euro = "€", Dollar = "$", Pound = "£", Jen = "¥"
     }
